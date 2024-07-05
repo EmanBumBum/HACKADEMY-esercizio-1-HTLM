@@ -1,0 +1,20 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+}
+.titolo {
+    font-family: "Roboto Mono", monospace;
+    color:#0a5d5a
+}
+
+.hover-element{
+    background-color: aquamarine;
+    transition: background-color 0.3s ease;
+}
+
+.hover-element:hover{
+    background-color: lightcoral;
+}
+article {
+    background-image: url("https://picsum.photos/2000");
+    background-repeat: no-repeat;
+}
