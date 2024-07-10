@@ -15,6 +15,43 @@
     background-color: lightcoral;
 }
 article {
-    background-image: url("https://picsum.photos/2000");
-    background-repeat: no-repeat;
+    background-image: linear-gradient(green,yellow,lightblue);
+    display:flex;
+}
+
+.principale {
+    width: 60%;
+}
+
+.artImg {
+    width:100%
+}
+
+.logo {
+    width:100%
+}
+
+aside {
+    width:40%;
+}
+
+.navPrincipale{
+    display:flex;
+    justify-content: left;
+}
+
+.navLink{
+    display:flex;
+    width: 60vw;
+    font-size: 15px;
+    padding:10
+}
+
+li{
+    width: 10vw;
+    padding:10px;
+}
+
+.navLink:hover{
+    border-bottom: 5px solid black;
 }
