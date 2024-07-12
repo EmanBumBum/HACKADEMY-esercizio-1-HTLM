@@ -19,6 +19,11 @@ article {
     display:flex;
 }
 
+footer {
+    background-color: rgba(48, 42, 42, 0.656);
+    height:8vh;
+}
+
 .principale {
     width: 60%;
 }
@@ -37,21 +42,84 @@ aside {
 
 .navPrincipale{
     display:flex;
-    justify-content: left;
 }
 
 .navLink{
     display:flex;
-    width: 60vw;
-    font-size: 15px;
-    padding:10
+    width:100%;
+    justify-content: center;
+    list-style-type:none;
+    padding:0px;
+    left:0px;
+    margin-left:10%;
 }
 
 li{
-    width: 10vw;
-    padding:10px;
+    flex: 1;
 }
 
 .navLink:hover{
     border-bottom: 5px solid black;
 }
+
+footer{
+    display:flex;
+}
+
+.pagine{
+    width:100%;
+}
+
+.icona{
+    display: flex;
+    justify-content: end;
+}
+
+.tornaSu{
+    position:fixed;
+    z-index:1000;
+    width:3%;
+    bottom:10px;
+    right:10px;
+    animation: pulse 1s infinite;
+}
+
+ @keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width:600px){
+    .tornaSu{
+        width:7%;
+    }
+    
+    .logo {
+        width:70%
+    }
+    
+    .navLink{
+        font-size: 10px;
+        min-width:fit-content;
+    }
+}
+
+/* @keyframes flash {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+.flash {
+    animation: flash 1s infinite;
+} */
